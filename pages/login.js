@@ -22,11 +22,8 @@ function Login({ providers }) {
         >
           spotify
         </h1>
-        <small className="absolute top-[6.5rem] right-[24rem] font-extrabold uppercase text-lg text-white hidden lg:block">
-          Clone
-        </small>
 
-        {/* {Object.values(providers).map((provider) => (
+        {Object.values(providers).map((provider) => (
           <div
             key={provider.name}
             className="absolute top-auto w-20 h-20 bg-transparent right-10 cursor-pointer"
@@ -37,7 +34,7 @@ function Login({ providers }) {
               style={{ color: "#1ed760" }}
             />
           </div>
-        ))} */}
+        ))}
       </div>
       <footer
         className="absolute bottom-0 w-96 h-16 bg-gray-300 rounded-t-md"

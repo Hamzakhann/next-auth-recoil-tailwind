@@ -16,7 +16,7 @@ async function refreshAccessToken(token) {
       accessToken: refreshedToken.access_token,
       accessTokenExpires: Date.now() + refreshToken.expires_in * 1000,
       refreshToken: refreshedToken.refresh_token ?? token.refreshToken
-    };
+        };
   } catch (error) {
     console.error(error);
 
@@ -67,7 +67,6 @@ export default NextAuth({
       session.user.accessToken = token.accessToken;
       session.user.refreshToken = token.refreshToken;
       session.user.username = token.username;
-
       return session;
     }
   }
